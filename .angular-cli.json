@@ -1,3 +1,4 @@
+//Configure CLI, change scripts and styles array
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
