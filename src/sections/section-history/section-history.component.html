@@ -1,3 +1,35 @@
-<p>
-  section-history works!
-</p>
+<div class="section-container">
+  <h2>Latest Uploads</h2>
+  <table class="table table-inverse table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Upload</th>
+        <th>User</th>
+        <th>Blood Pressure (Systolic) [mmHg]</th>
+        <th>Heart-Rate [bpm]</th>
+        <th>Quality of Sleep [hours]</th>
+        <th>Change in Body Weight [lbs/2 weeks]</th>
+        <th>BMI [kgm-2/2weeks]</th>
+        <th>FAQ [Score]</th>
+        <th>BOMC [Score]</th>
+        <th>Health Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let upload of uploads">
+        <td>{{ upload.id }}</td>
+        <td>{{ upload.stamp | date: 'short' }}</td>
+        <td>{{ upload.user.name }}</td>
+        <td>{{ upload.bp }}</td>
+        <td>{{ upload.hr }}</td>
+        <td>{{ upload.qos }}</td>
+        <td>{{ upload.bw }}</td>
+        <td>{{ upload.bmi }}</td>
+        <td>{{ upload.faq }}</td>
+        <td>{{ upload.bomc }}</td>
+        <td>Health Status</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
