@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 const SAMPLE_BARCHART_DATA: any[] = [
-  { data: [65, 59, 80, 81, 100, 121, 72], label: 'Session 1: Heart-Rate [bpm]' },
-  { data: [71, 75, 66, 111, 88, 70, 70], label: 'Session 2: Heart-Rate [bpm]' },
-  { data: [70, 70, 95, 90, 80, 65, 66], label: 'Session 3: Heart-Rate [bpm]' }
+  { data: [119, 140, 165, 164, 100, 121, 118], label: 'BP [Systolic]' },
+  { data: [71, 75, 66, 111, 88, 70, 70], label: 'Heart-Rate [bpm]' },
+  { data: [7, 7, 5, 9, 8, 6, 6], label: 'Quality of Sleep [hours]' }
 ];
 
 const SAMPLE_BARCHART_LABELS: string[] = ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7'];

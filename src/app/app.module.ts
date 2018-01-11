@@ -13,6 +13,8 @@ import { SectionSystemComponent } from '../sections/section-system/section-syste
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
+import { BarChart2Component } from './charts/bar-chart2/bar-chart2.component';
+import { PieChart2Component } from './charts/pie-chart2/pie-chart2.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
     SectionSystemComponent,
     BarChartComponent,
     LineChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    BarChart2Component,
+    PieChart2Component
   ],
   imports: [
     BrowserModule,
