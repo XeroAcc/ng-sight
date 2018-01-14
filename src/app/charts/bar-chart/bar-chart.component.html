@@ -1,10 +1,11 @@
 <div class="chart">
   <canvas baseChart
+    *ngIf='barChartData && barChartData.length > 0'
     [datasets]="barChartData"
     [labels]="barChartLabels"
     [options]="barChartOptions"
     [legend]="barChartLegend"
-    [chartType]="barChartType">
-    [colors]="colours"
+    [chartType]="barChartType"
+    [colors]="colours">
   </canvas>
 </div>

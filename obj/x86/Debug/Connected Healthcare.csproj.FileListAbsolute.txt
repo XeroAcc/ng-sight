@@ -1,0 +1,2 @@
+C:\Heroku\Service\NgSight\obj\x86\Debug\Connected Healthcare.csprojResolveAssemblyReference.cache
+C:\Heroku\Service\NgSight\obj\x86\Debug\Connected Healthcare.csproj.CoreCompileInputs.cache

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Upload } from '../../app/shared/upload';
 import { User } from '../../app/shared/user';
+import { ServicesDataService } from '../../app/services/services-data.service';
 
 
 @Component({
@@ -10,17 +11,42 @@ import { User } from '../../app/shared/user';
 })
 export class SectionHistoryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _servicesData: ServicesDataService) { }
 
-  uploads: Upload[] = [
-    {
-      id: 1, stamp: new Date(2018, 1, 1), user:
-        { id: 1, name: 'Maria Sky Sandova', email: 'marias123@gmail.com', province: 'ON' },
-      bp: 140, hr: 95, qos: 8, bw: 1, bmi: 24, faq: 5, bomc: 6
-    },
-  ];
+  updates: History[];
+  total = 0;
+  page = 1;
+  limit = 10;
+  loading = false;
 
   ngOnInit() {
+    this.getUpdates();
   }
 
+  getUpdates(): void {
+    this._servicesData.getUpdates(this.page, this.limit)
+      .subscribe(res => {
+        console.log('Result from getUpdates: ', res);
+        this.updates = res['page']['data'];
+        this.total = res['page'].total;
+        this.loading = false;
+      });
+  }
+
+  goToPrevious(): void {
+    // console.log('Previous Button Clicked!');
+    this.page--;
+    this.getUpdates();
+  }
+
+  goToNext(): void {
+    // console.log('Next Button Clicked!');
+    this.page++;
+    this.getUpdates();
+  }
+
+  goToPage(n: number): void {
+    this.page = n;
+    this.getUpdates();
+  }
 }

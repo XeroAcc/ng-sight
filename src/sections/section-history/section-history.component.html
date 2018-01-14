@@ -17,19 +17,27 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let upload of uploads">
-        <td>{{ upload.id }}</td>
-        <td>{{ upload.stamp | date: 'short' }}</td>
-        <td>{{ upload.user.name }}</td>
-        <td>{{ upload.bp }}</td>
-        <td>{{ upload.hr }}</td>
-        <td>{{ upload.qos }}</td>
-        <td>{{ upload.bw }}</td>
-        <td>{{ upload.bmi }}</td>
-        <td>{{ upload.faq }}</td>
-        <td>{{ upload.bomc }}</td>
+      <tr *ngFor="let update of updates">
+        <td>{{ update.id }}</td>
+        <td>{{ update.stamp }}</td>
+        <td>{{ update.user.id }}</td>
+        <td>{{ update.bps }}</td>
+        <td>{{ update.hr }}</td>
+        <td>{{ update.qos }}</td>
+        <td>{{ update.bw }}</td>
+        <td>{{ update.bmi }}</td>
+        <td>{{ update.faq }}</td>
+        <td>{{ update.bomc }}</td>
         <td>Health Status</td>
       </tr>
     </tbody>
   </table>
+
+<app-pagination (goPage)="goToPage($event)"
+                (goPrev)="goToPrevious()"
+                (goNext)="goToNext()"
+                [page]="page"
+                [perPage]="limit"
+                [count]="total">
+</app-pagination>
 </div>
