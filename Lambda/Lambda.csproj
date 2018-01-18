@@ -2,22 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <UserSecretsId>aspnet-Lambda-ACD81718-71A0-46D7-921A-895AF449F6E6</UserSecretsId>
+    <UserSecretsId>aspnet-Lambda-ADF15E8A-7DD2-4ED5-89D9-A1FB11F20AF8</UserSecretsId>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="obj\Debug\netcoreapp2.0\Lambda.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs" />
-    <Compile Include="obj\Release\netcoreapp2.0\Lambda.AssemblyInfo.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="bin\Debug\netcoreapp2.0\Lambda.deps.json" />
-    <Content Include="bin\Debug\netcoreapp2.0\Lambda.runtimeconfig.dev.json" />
-    <Content Include="bin\Debug\netcoreapp2.0\Lambda.runtimeconfig.json" />
-    <Content Include="obj\Debug\netcoreapp2.0\Lambda.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\project.assets.json" />
-  </ItemGroup>
 
 
   <ItemGroup>
@@ -33,22 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="bin\Debug\netcoreapp2.0\Lambda.dll" />
-    <None Include="bin\Debug\netcoreapp2.0\Lambda.pdb" />
-    <None Include="obj\Debug\netcoreapp2.0\Lambda.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\netcoreapp2.0\Lambda.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\netcoreapp2.0\Lambda.csprojResolveAssemblyReference.cache" />
-    <None Include="obj\Debug\netcoreapp2.0\Lambda.dll" />
-    <None Include="obj\Debug\netcoreapp2.0\Lambda.pdb" />
-    <None Include="obj\Lambda.csproj.nuget.cache" />
-    <None Include="obj\Lambda.csproj.nuget.g.props" />
-    <None Include="obj\Lambda.csproj.nuget.g.targets" />
-    <None Include="obj\Release\netcoreapp2.0\Lambda.AssemblyInfoInputs.cache" />
-    <None Include="obj\Release\netcoreapp2.0\Lambda.csproj.CoreCompileInputs.cache" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="bin\Release\netcoreapp2.0\" />
+    <ProjectReference Include="Lambda.Data\Lambda.Data.csproj" />
   </ItemGroup>
 
 </Project>

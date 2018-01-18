@@ -1,12 +1,12 @@
-C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.csprojResolveAssemblyReference.cache
-C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.csproj.CoreCompileInputs.cache
-C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
-C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.AssemblyInfoInputs.cache
-C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.AssemblyInfo.cs
 C:\Heroku\Service\NgSight\Lambda\bin\Debug\netcoreapp2.0\Lambda.deps.json
 C:\Heroku\Service\NgSight\Lambda\bin\Debug\netcoreapp2.0\Lambda.runtimeconfig.json
 C:\Heroku\Service\NgSight\Lambda\bin\Debug\netcoreapp2.0\Lambda.runtimeconfig.dev.json
 C:\Heroku\Service\NgSight\Lambda\bin\Debug\netcoreapp2.0\Lambda.dll
 C:\Heroku\Service\NgSight\Lambda\bin\Debug\netcoreapp2.0\Lambda.pdb
+C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.csprojResolveAssemblyReference.cache
+C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.csproj.CoreCompileInputs.cache
+C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.AssemblyInfoInputs.cache
+C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.AssemblyInfo.cs
 C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.dll
 C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.pdb

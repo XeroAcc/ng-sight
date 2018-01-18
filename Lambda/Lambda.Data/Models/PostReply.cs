@@ -1,10 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lambda.Data.Models
 {
-    public class PostReply
+  public class PostReply
     {
         public int Id { get; set; }
         public string Content { get; set; }

@@ -5028,6 +5028,20 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Lambda.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lambda.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lambda.Data.dll": {}
+        }
       }
     }
   },
@@ -13112,10 +13126,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Lambda.Data/1.0.0": {
+      "type": "project",
+      "path": "Lambda.Data/Lambda.Data.csproj",
+      "msbuildProject": "Lambda.Data/Lambda.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Lambda.Data >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -13157,7 +13177,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj": {
+              "projectPath": "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
