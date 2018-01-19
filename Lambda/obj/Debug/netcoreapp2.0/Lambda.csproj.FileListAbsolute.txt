@@ -10,3 +10,5 @@ C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.AssemblyInfoInpu
 C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.AssemblyInfo.cs
 C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.dll
 C:\Heroku\Service\NgSight\Lambda\obj\Debug\netcoreapp2.0\Lambda.pdb
+C:\Heroku\Service\NgSight\Lambda\bin\Debug\netcoreapp2.0\Lambda.Data.dll
+C:\Heroku\Service\NgSight\Lambda\bin\Debug\netcoreapp2.0\Lambda.Data.pdb
