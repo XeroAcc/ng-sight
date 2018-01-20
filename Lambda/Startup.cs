@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Lambda.Data;
-using Lambda.Services;
 using Lambda.Data.Models;
+using Lambda.Service;
 
 namespace Lambda
 {
@@ -31,7 +31,7 @@ namespace Lambda
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
+            services.AddScoped<IForum, ForumService>();
             services.AddMvc();
         }
 

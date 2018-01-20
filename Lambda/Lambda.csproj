@@ -5,6 +5,35 @@
     <UserSecretsId>aspnet-Lambda-ADF15E8A-7DD2-4ED5-89D9-A1FB11F20AF8</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Lambda.Data\bin\**" />
+    <Compile Remove="Lambda.Data\obj\**" />
+    <Content Remove="Lambda.Data\bin\**" />
+    <Content Remove="Lambda.Data\obj\**" />
+    <EmbeddedResource Remove="Lambda.Data\bin\**" />
+    <EmbeddedResource Remove="Lambda.Data\obj\**" />
+    <None Remove="Lambda.Data\bin\**" />
+    <None Remove="Lambda.Data\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Lambda.Data\Models\ApplicationUser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.0\Lambda.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs" />
+    <Compile Include="obj\Release\netcoreapp2.0\Lambda.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.0\Lambda.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\Lambda.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\Lambda.runtimeconfig.json" />
+    <Content Include="obj\Debug\netcoreapp2.0\Lambda.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
@@ -19,7 +48,36 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.0\Lambda.Data.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\Lambda.Data.pdb" />
+    <None Include="bin\Debug\netcoreapp2.0\Lambda.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\Lambda.pdb" />
+    <None Include="bin\Debug\netcoreapp2.0\Lambda.Service.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\Lambda.Service.pdb" />
+    <None Include="Lambda.Data\Lambda.Data.csproj" />
+    <None Include="Lambda.Service\Lambda.Service.csproj" />
+    <None Include="Lambda.Service\Lambda.Service.csproj.user" />
+    <None Include="obj\Debug\netcoreapp2.0\Lambda.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\Lambda.csproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp2.0\Lambda.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\Lambda.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\Lambda.dll" />
+    <None Include="obj\Debug\netcoreapp2.0\Lambda.pdb" />
+    <None Include="obj\Lambda.csproj.EntityFrameworkCore.targets" />
+    <None Include="obj\Lambda.csproj.nuget.cache" />
+    <None Include="obj\Lambda.csproj.nuget.g.props" />
+    <None Include="obj\Lambda.csproj.nuget.g.targets" />
+    <None Include="obj\Release\netcoreapp2.0\Lambda.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.0\Lambda.csproj.CoreCompileInputs.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="Lambda.Data\Lambda.Data.csproj" />
+    <ProjectReference Include="Lambda.Service\Lambda.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Release\netcoreapp2.0\" />
   </ItemGroup>
 
 </Project>

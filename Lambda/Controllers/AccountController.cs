@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Lambda.Models.AccountViewModels;
-using Lambda.Services;
+using Lambda.Service;
 using Lambda.Data.Models;
 
 namespace Lambda.Controllers
@@ -16,10 +16,10 @@ namespace Lambda.Controllers
     [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly IEmailSender _emailSender;
-        private readonly ILogger _logger;
+        public readonly UserManager<ApplicationUser> _userManager;
+        public readonly SignInManager<ApplicationUser> _signInManager;
+        public readonly IEmailSender _emailSender;
+        public readonly ILogger _logger;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,

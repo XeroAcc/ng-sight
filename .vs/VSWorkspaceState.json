@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Advantage.API\\Models",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\pagination",
-    "\\src\\app\\services",
+    "\\src\\app\\charts",
+    "\\src\\app\\charts\\line-chart",
+    "\\src\\app\\sidebar",
     "\\src\\sections",
-    "\\src\\sections\\section-history"
+    "\\src\\sections\\section-system"
   ],
+  "SelectedNode": "\\obj",
   "PreviewInSolutionExplorer": false
 }

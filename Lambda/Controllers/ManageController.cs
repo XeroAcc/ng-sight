@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Lambda.Models.ManageViewModels;
-using Lambda.Services;
+using Lambda.Service;
 using Lambda.Data.Models;
 
 namespace Lambda.Controllers
@@ -18,8 +18,8 @@ namespace Lambda.Controllers
     [Route("[controller]/[action]")]
     public class ManageController : Controller
     {
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
+        public readonly UserManager<ApplicationUser> _userManager;
+        public readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
         private readonly UrlEncoder _urlEncoder;

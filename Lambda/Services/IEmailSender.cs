@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Lambda.Services
+namespace Lambda.Service
 {
     public interface IEmailSender
     {

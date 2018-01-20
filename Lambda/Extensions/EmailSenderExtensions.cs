@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using Lambda.Services;
+using Lambda.Service;
 
-namespace Lambda.Services
+namespace Lambda.Service
 {
     public static class EmailSenderExtensions
     {

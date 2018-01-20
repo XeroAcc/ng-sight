@@ -5042,6 +5042,19 @@
         "runtime": {
           "bin/placeholder/Lambda.Data.dll": {}
         }
+      },
+      "Lambda.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Lambda.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lambda.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lambda.Service.dll": {}
+        }
       }
     }
   },
@@ -13131,11 +13144,17 @@
       "type": "project",
       "path": "Lambda.Data/Lambda.Data.csproj",
       "msbuildProject": "Lambda.Data/Lambda.Data.csproj"
+    },
+    "Lambda.Service/1.0.0": {
+      "type": "project",
+      "path": "Lambda.Service/Lambda.Service.csproj",
+      "msbuildProject": "Lambda.Service/Lambda.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Lambda.Data >= 1.0.0",
+      "Lambda.Service >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -13178,6 +13197,9 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Service\\Lambda.Service.csproj": {
+              "projectPath": "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Service\\Lambda.Service.csproj"
+            },
             "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj": {
               "projectPath": "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj"
             }

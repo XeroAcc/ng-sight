@@ -1,0 +1,11 @@
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\bin\Debug\netcoreapp2.0\Lambda.Service.deps.json
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\bin\Debug\netcoreapp2.0\Lambda.Service.dll
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\bin\Debug\netcoreapp2.0\Lambda.Service.pdb
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\bin\Debug\netcoreapp2.0\Lambda.Data.dll
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\bin\Debug\netcoreapp2.0\Lambda.Data.pdb
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\obj\Debug\netcoreapp2.0\Lambda.Service.csprojResolveAssemblyReference.cache
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\obj\Debug\netcoreapp2.0\Lambda.Service.csproj.CoreCompileInputs.cache
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\obj\Debug\netcoreapp2.0\Lambda.Service.AssemblyInfoInputs.cache
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\obj\Debug\netcoreapp2.0\Lambda.Service.AssemblyInfo.cs
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\obj\Debug\netcoreapp2.0\Lambda.Service.dll
+C:\Heroku\Service\NgSight\Lambda\Lambda.Service\obj\Debug\netcoreapp2.0\Lambda.Service.pdb

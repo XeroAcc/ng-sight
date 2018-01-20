@@ -12540,6 +12540,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj",
       "projectName": "Lambda.Data",
