@@ -1,6 +1,9 @@
 using Lambda.Data;
+using Lambda.Data.Models;
 using Lambda.Models.Forum;
+using Lambda.Models.Post;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Linq;
 
 namespace Lambda.Controllers
@@ -35,12 +38,26 @@ namespace Lambda.Controllers
         public IActionResult Topic(int id)
         {
             var forum = _forumService.GetById(id);
+            var posts = _postService.GetPostsByForum(id);
 
-            var post = _postService.GetFilteredPosts(id);
+            var postListings = posts.Select(post => new PostListingModel
+            {
+                Id = post.Id,
+                AuthorId = post.User.Id,
+                AuthorRating = post.User.Rating,
+                Title = post.Title,
+                DatePosted = post.Created,
+                RepliesCount = post.Replies.Count(),
+                Forum = BuildForumListing(post)
+            });
 
-            var postListings = ;
+            return View();
+        }
 
-            
+        private ForumListingModel BuildForumListing(Post post)
+        {
+           throw new NotImplementedException();
         }
   }
+
 }

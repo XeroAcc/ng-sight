@@ -13,5 +13,10 @@ namespace Lambda.Data.Models
         public string ImageUrl { get; set; }
 
         public virtual IEnumerable<Post> Posts { get; set; }
+
+    internal object First()
+    {
+      throw new NotImplementedException();
     }
+  }
 }
