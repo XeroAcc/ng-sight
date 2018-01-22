@@ -1,6 +1,5 @@
 using Lambda.Models.Forum;
 using System;
-using System.Collections.Generic;
 
 namespace Lambda.Models.Post
 {

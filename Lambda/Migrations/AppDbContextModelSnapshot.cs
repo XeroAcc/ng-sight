@@ -35,9 +35,13 @@ namespace Lambda.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
+                    b.Property<bool>("IsActive");
+
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
+
+                    b.Property<DateTime>("MemberSince");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);
@@ -50,6 +54,10 @@ namespace Lambda.Migrations
                     b.Property<string>("PhoneNumber");
 
                     b.Property<bool>("PhoneNumberConfirmed");
+
+                    b.Property<string>("ProfileImageUrl");
+
+                    b.Property<int>("Rating");
 
                     b.Property<string>("SecurityStamp");
 

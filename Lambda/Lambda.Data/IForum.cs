@@ -6,7 +6,7 @@ namespace Lambda.Data
 {
   public interface IForum
     {
-        IForum GetById(int id);
+        Forum GetById(int id);
         IEnumerable<Forum> GetAll();
         IEnumerable<ApplicationUser> GetAllActiveUsers();
 
@@ -14,5 +14,5 @@ namespace Lambda.Data
         Task Delete(int forumId);
         Task UpdateForumTitle(int forumId, string newTitle);
         Task UpdateForumDescription(int forumId, string newDescription);
-    }
+  }
 }

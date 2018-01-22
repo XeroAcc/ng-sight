@@ -7,7 +7,7 @@ namespace Lambda.Data
   public interface IPost
   {
         Post GetById(int id);
-        IEnumerable<Post> GetAll(int id);
+        IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(string searchQuery);
         IEnumerable<Post> GetPostsByForum(int id);
 

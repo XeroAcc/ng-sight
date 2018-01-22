@@ -11,13 +11,13 @@ namespace Lambda.Service
   public class ForumService : IForum
   {
     private readonly AppDbContext _ctx;
+    private Forum forum;
 
     // Forum Service uses EntityFramework to interact w/ Data
     public ForumService(AppDbContext ctx)
     {
       _ctx = ctx;
     }
-
 
     public Task Create(Forum forum)
     {
@@ -39,17 +39,6 @@ namespace Lambda.Service
       throw new NotImplementedException();
     }
 
-    public Forum GetById(int id)
-    {
-      var forum = _ctx.Forums.Where(f => f.Id == id)
-      .Include(f => f.Posts).ThenInclude(f => f.User)
-      .Include(f => f.Posts).ThenInclude(p => p.Replies)
-      .ThenInclude(r => r.User)
-      .FirstOrDefault();
-
-      return forum;
-    }
-
     public Task UpdateForumDescription(int forumId, string newDescription)
     {
       throw new NotImplementedException();
@@ -60,9 +49,15 @@ namespace Lambda.Service
       throw new NotImplementedException();
     }
 
-    IForum IForum.GetById(int id)
+    public Forum GetById(int id)
     {
-      throw new NotImplementedException();
+        var forum = _ctx.Forums.Where(f => f.Id == id)
+        .Include(f => f.Posts).ThenInclude(p => p.User)
+        .Include(f => f.Posts).ThenInclude(p => p.Replies)
+        .ThenInclude(r => r.User)
+        .FirstOrDefault();
+
+        return forum;
     }
   }
 }

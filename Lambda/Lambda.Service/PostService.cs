@@ -1,5 +1,6 @@
 using Lambda.Data;
 using Lambda.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,14 +38,18 @@ namespace Lambda.Service
       throw new NotImplementedException();
     }
 
-    public IEnumerable<Post> GetAll(int id)
+    public IEnumerable<Post> GetAll()
     {
       throw new NotImplementedException();
     }
 
     public Post GetById(int id)
     {
-      throw new NotImplementedException();
+      return _ctx.Posts.Where(post => post.Id == id)
+          .Include(post => post.User)
+          .Include(post => post.Replies).ThenInclude(reply => reply.User)
+          .Include(post => post.Forum)
+          .First();
     }
 
     public IEnumerable<Post> GetFilteredPosts(string searchQuery)
@@ -54,9 +59,7 @@ namespace Lambda.Service
 
     public IEnumerable<Post> GetPostsByForum(int id)
     {
-      return _ctx.Forums
-          .Where(forum => forum.Id == id).First()
-          .Posts;
+      return _ctx.Forums.Where(forum => forum.Id == id).First().Posts;
     }
   }
 }
