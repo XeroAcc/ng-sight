@@ -52,10 +52,10 @@ namespace Lambda.Service
     public Forum GetById(int id)
     {
         var forum = _ctx.Forums.Where(f => f.Id == id)
-        .Include(f => f.Posts).ThenInclude(p => p.User)
-        .Include(f => f.Posts).ThenInclude(p => p.Replies)
-        .ThenInclude(r => r.User)
-        .FirstOrDefault();
+          .Include(f => f.Posts).ThenInclude(p => p.User)
+          .Include(f => f.Posts).ThenInclude(p => p.Replies)
+          .ThenInclude(r => r.User)
+          .FirstOrDefault();
 
         return forum;
     }

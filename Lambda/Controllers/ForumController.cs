@@ -43,6 +43,7 @@ namespace Lambda.Controllers
             {
                 Id = post.Id,
                 AuthorId = post.User.Id,
+                Author = post.User.UserName,
                 AuthorRating = post.User.Rating,
                 Title = post.Title,
                 DatePosted = post.Created,

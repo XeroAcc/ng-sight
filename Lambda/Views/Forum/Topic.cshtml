@@ -10,19 +10,21 @@
           {
           <tr>
             <td>
-              <a asp-controlller="Post" asp-action="Index" asp-route-id="@post.Id">
-              @post.Title
+              <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">
+                @post.Title
               </a>
-              @post.Title
             </td>
             <td>
               @post.Author
             </td>
             <td>
+              Rating: @post.AuthorRating
+            </td>
+            <td>
               @post.DatePosted
             </td>
             <td>
-              @post.RepliesCount
+              Replies: @post.RepliesCount
             </td>
           </tr>
           }
