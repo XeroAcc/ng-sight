@@ -13168,6 +13168,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.csproj",
       "projectName": "Lambda",
@@ -13194,11 +13197,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj": {
-              "projectPath": "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj"
-            },
             "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Service\\Lambda.Service.csproj": {
               "projectPath": "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Service\\Lambda.Service.csproj"
+            },
+            "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj": {
+              "projectPath": "C:\\Heroku\\Service\\NgSight\\Lambda\\Lambda.Data\\Lambda.Data.csproj"
             }
           }
         }

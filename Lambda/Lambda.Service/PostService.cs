@@ -17,9 +17,10 @@ namespace Lambda.Service
       _ctx = ctx;
     }
 
-    public Task Add(Post post)
+    public async Task Add(Post post)
     {
-      throw new NotImplementedException();
+      _ctx.Add(post);
+      await _ctx.SaveChangesAsync();
     }
 
     public Task AddReply(PostReply reply)
